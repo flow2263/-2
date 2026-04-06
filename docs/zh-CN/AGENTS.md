@@ -1,6 +1,6 @@
 # Everything Claude Code (ECC) — 智能体指令
 
-这是一个**生产就绪的 AI 编码插件**，提供 47 个专业代理、181 项技能、79 条命令以及自动化钩子工作流，用于软件开发。
+这是一个**生产就绪的 AI 编码插件**，提供 49 个专业代理、183 项技能、79 条命令以及自动化钩子工作流，用于软件开发。
 
 **版本:** 1.10.0
 
@@ -41,6 +41,8 @@
 | harness-optimizer | Harness 配置调优 | 可靠性、成本、吞吐量 |
 | rust-reviewer | Rust 代码审查 | Rust 项目 |
 | rust-build-resolver | Rust 构建错误 | Rust 构建失败 |
+| swift-reviewer | Swift/iOS/macOS 代码审查 | Swift/Apple 平台项目 |
+| swift-build-resolver | Swift/Xcode/SPM 构建错误 | Swift 构建失败 |
 | pytorch-build-resolver | PyTorch 运行时/CUDA/训练错误 | PyTorch 构建/训练失败 |
 | typescript-reviewer | TypeScript/JavaScript 代码审查 | TypeScript/JavaScript 项目 |
 
@@ -146,8 +148,8 @@
 ## 项目结构
 
 ```
-agents/          — 47 个专业子代理
-skills/          — 181 个工作流技能和领域知识
+agents/          — 49 个专业子代理
+skills/          — 183 个工作流技能和领域知识
 commands/        — 79 个斜杠命令
 hooks/           — 基于触发的自动化
 rules/           — 始终遵循的指导方针（通用 + 每种语言）
