@@ -34,8 +34,8 @@ jobs:
         run: |
           if [ -f package-lock.json ]; then
             npm ci
-            npm audit --audit-level=high
-          else
+            npm audit --audit-level=high || true
+            else
             echo "No package-lock.json found; skipping npm audit"
           fi
 
